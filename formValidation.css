@@ -1,0 +1,45 @@
+body {
+    margin: 238px;
+    background: #FEA088;
+    background-repeat:no-repeat;
+}
+#upper{
+    font-size: 20px;
+    padding: 20px 0px 0px 10px;
+    width: 675px;
+    height: 200px;
+    border:3px solid black;
+    margin:0 auto;
+    background: #7DB46CFF;
+    margin-bottom:25px;
+}
+#lower{
+    font-size: 20px;
+    width: 675px;
+    height: 150px;
+    border:3px solid black;
+    padding: 25px 0px 0px 10px;
+    margin:0 auto;
+    background: #7DB46CFF;
+    margin-bottom:25px;
+}
+#Save{
+    border:1px solid black;
+    font-size:20px;
+    width: 100px;
+    height: 35px;
+    margin:0 0 0 575px;
+}
+#Save:hover{
+    background-color:lightblue;
+}
+#Cancel{
+    border:1px solid black;
+    font-size:20px;
+    width: 100px;
+    height: 35px;
+    margin:0 0 0 100px;
+}
+#Cancel:hover{
+    background-color:lightblue;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RAMOS, ROMMEL M.">
+    <title>Event Form Validation</title>
+    <link rel="stylesheet" href="formValidation.css">
+    <script src="validation.js"></script>
+</head> 
+<body>
+    <div id="upper">
+    <form onsubmit="alert('Data saved.');" 
+    onreset="alert('Resetting all the fields');" >
+        <b>Event type:</b>
+        <select name="eventType" required>
+            <option value="" disabled selected>Choose one:</option>
+            <option value="1">Birthday</option>
+            <option value="2">Wedding</option>
+            <option value="3">Vacation</option>
+            <option value="4">Reunion</option>
+            <option value="5">Graduation</option>
+            <option value="6">Concert</option>
+            <option value="7">Marriage</option>
+            <option value="8">Debut</option>
+            <option value="9">Baptism</option>
+            <option value="10">Promenade</option>
+        </select>
+        <br><br>
+
+        <b>Event Title:</b>
+        <input type="text" id = "eventTitle" name="eventTitle" onblur = "validateEventTitle()" required> 
+        <br><br>
+
+        <b>Event Dates:</b>
+        <input type="date" id="startingDate" name="startingDate" onblur="validateStartDate()" required>  
+        to 
+        <input type="date" id="endDate" name="endDate" onblur="validateEndDate()" required>
+        <br><br>
+
+        <b>Posting Dates:</b>
+        <input type="date" id="postDate" name="postDate" onblur="validatePostDate()" required>
+        <br><br><br>
+    </div>
+    
+    <div id="lower">
+        <input type="checkbox" name="check">Is registration required?<br>      
+        <input type="checkbox" name="check">Is this event associated with any Family Programs?<br>      
+        <input type="checkbox" name="check">Upon Registration Completion, Are Users to Receive an Auto Generated Email?<br>
+        <input type="checkbox" name="check">Is There a Point of Contact?<br>  
+        <input type="checkbox" name="check">Is There a Hosting Command Point of Contact?<br>  
+        <br> <br><br>
+    </div>
+        <input type="submit" value="Save" id="Save">
+        <input type="reset" value="Cancel" id="Cancel">
+    </form>
+</body>
+</html>
